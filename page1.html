@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Import jQuery before materialize.js-->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+
+<body>
+  <input type="text" value="Name"></input>
+  <input type="date" value=""></input>
+  <input type="text" value="Place of Incorporation"></input>
+  <input type="number" name="EIN" value="123"></input>
+  <input type="text" name="codaRef" value="CODA Reference"></input>
+  <textarea rows="4" cols="">Bussiness Address</textarea>
+  <!-- Dropdown Trigger -->
+  <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Entity Type Elected <span class="caret"></span></a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">Partnership</a></li>
+    <li><a href="#!">Corporation</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">DRE</a></li>
+  </ul>
+  <div>
+    <a href="#!">Link to 8032</a>
+  </div>
+  <input type="text" name="giin" value="GIIN"></input>
+  <input type="text" name="foreign-jurisdiction" value="Foreign Jurisdiction"></input>
+  <button>Master</button><a class='dropdown-button btn' href='#' data-activates='dropdown2'>Feeder </a>
+  <a class='dropdown-button btn' href='#' data-activates='dropdown3'>Master-Feeder </a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown2' class='dropdown-content'>
+    <li><a href="#!">Onshore</a></li>
+    <li class="divider"></li>
+    <li><a class='dropdown-button btn' href='#' data-activates='dropdown4'>Offshore </a></li>
+  </ul>
+
+  <ul id='dropdown3' class='dropdown-content'>
+    <li><a href="#!">Entities invested in:</a></li>
+  </ul>
+
+  <ul id='dropdown4' class='dropdown-content'>
+    <li><a href="#!">W/H applied</a></li>
+    <li><a href="#!">1042-s Filed</a></li>
+  </ul>
+
+  <div class="card-panel teal lighten-2">
+    <h6>Performance Member</h6>
+    <label class="danger">Name</label>
+    <label class="danger">Tax-incentive Allocation</label>
+    <a class='dropdown-button btn' href='#' data-activates='dropdown5'>Methodology</a>
+    <label>Fee/Re-allocation</label>
+    <ul id='dropdown5' class='dropdown-content'>
+      <li><a href="#!">item 1</a></li>
+      <li><a href="#!">item 2</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <a class='dropdown-button btn' href='#' data-activates='dropdown6'>partners Allocation Methodology</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown6' class='dropdown-content'>
+      <li><a href="#!">Aggregate</a></li>
+      <li><a href="#!">WaterFall</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Others</a></li>
+    </ul>
+  </div>
+
+
+</body>
+
+</html>
