@@ -2,8 +2,9 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="css/bootstrap-light-blue.min.css">
+  <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </head>
@@ -11,7 +12,7 @@
 <body>
   <div class="dropdown">
     <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
-    Topics
+    Trader
 <span class="caret"></span>
 </button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -28,7 +29,7 @@
     <form role="form">
       <div class="form-group">
         <label for="name">Investor</label>
-        <input type="text" class="form-control input-lg" id="name" placeholder="Investor">
+        <input type="text" class="form-control input-lg col-xs-5" id="name" placeholder="Investor">
       </div>
     </form>
   </div>
@@ -36,8 +37,7 @@
 
 
 <div class="dropdown">
-  <button type="button" class="btn dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown">
-Topics
+  <button type="button" class="btn dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown"> MSA-Elections
 <span class="caret"></span>
 </button>
   <ul class="dropdown-menu pull-down" role="menu" aria-labelledby="dropdownMenu2">
@@ -56,12 +56,10 @@ Topics
 <div>
   <label> Straddle </label>
   <label class="checkbox-inline">
-<input type="radio" name="optionsRadiosinline" id="optionsRadios3"
-value="option1" checked> Option 1
+<input type="radio" name="optionsRadiosinline" id="optionsRadios3" value="option1" checked> Option 1
 </label>
   <label class="checkbox-inline">
-<input type="radio" name="optionsRadiosinline" id="optionsRadios4"
-value="option2"> Option 2
+<input type="radio" name="optionsRadiosinline" id="optionsRadios4" value="option2"> Option 2
 </label>
 </div>
 
@@ -69,59 +67,69 @@ value="option2"> Option 2
 <button type="button" class="btn btn-link">Straddle Loss Deferral</button>
 
 <!--Investments-->
-<div>
+<div class="container">
   <h3><span class="label label-primary">Investments</span></h3>
 </div>
 
 <!--Table below Investment Header -->
 <div class="container">
-  <div class="row">
-    <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-      <div class="row ">Entity Info</div>
-    </div>
-    <div class="col-md-4" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-      <div class="row">Tacx Treatment</div>
-    </div>
-    <div class="col-md-4" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-      <div class="row">Tax Filings</div>
+  <!--<div class="row">-->
+  <div class="col-md-4">
+    <!---->
+    <div class="panel panel-primary">
+      <div class="panel-heading">Entity Info</div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Investment 1</strong></li>
+          <li class="list-group-item">Name</li>
+          <li class="list-group-item">Date of Incorporation</li>
+          <li class="list-group-item">Place of Incorporation</li>
+          <li class="list-group-item">EIN</li>
+          <li class="list-group-item">Business Address</li>
+          <li class="list-group-item">Entity Type Elected</li>
+          <li class="list-group-item">Link to 8032</li>
+          <li class="list-group-item">GIIN</li>
+          <li class="list-group-item">Foreign</li>
+        </ul>
+      </div>
+      <!---->
     </div>
   </div>
-</div>
-
-<!--Details of Investment-->
-<div class="container">
-  <div class="row">
-    <div class="col-md-4" style="background-color: #dedef8; box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-      <div class="row ">Investment 1</div>
-      <div class="row ">Name</div>
-      <div class="row ">Date of Incorporation</div>
-      <div class="row ">Place of Incorporation</div>
-      <div class="row ">EIN</div>
-      <div class="row ">Business Address</div>
-      <div class="row ">Entity Type Elected</div>
-      <div class="row ">Link to 8032</div>
-      <div class="row ">GIIN </div>
-      <div class="row ">Foreign </div>
-    </div>
-    <div class="col-md-4" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-      <div class="row">
-        <ol class="breadcrumb">
-          <li><a href="#">Cost Recovery</a></li>
-          <li><a href="#">K1s</a></li>
-          <li><a href="#">Other Analysis</a></li>
-        </ol>
+  <div class="col-md-4">
+    <!---->
+    <div class="panel panel-primary">
+      <div class="panel-heading">Tax Treatment</div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <ol class="breadcrumb">
+              <li><a href="#">Cost Recovery</a></li>
+              <li><a href="#">K1s</a></li>
+              <li><a href="#">Other Analysis</a></li>
+            </ol>
+          </li>
+          <li class="list-group-item">Functional Currency</li>
+          <li class="list-group-item">Sec 987</li>
+          <li class="list-group-item">Sec 986</li>
+          <li class="list-group-item">PFIC</li>
+          <li class="list-group-item">CFC</li>
+        </ul>
       </div>
-      <div class="row">Functional Currency</div>
-      <div class="row">Sec 987</div>
-      <div class="row">Sec 986</div>
-      <div class="row">PFIC</div>
-      <div class="row">CFC</div>
+      <!---->
     </div>
-
-    <div class="col-md-4" style="background-color: #dedef8;box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
-      <div class="row">Form 8865</div>
-      <div class="row">Form 5471</div>
-      <div class="row">Form 8858</div>
+  </div>
+  <div class="col-md-4">
+    <!---->
+    <div class="panel panel-primary">
+      <div class="panel-heading">Tax Filings</div>
+      <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">Form 8865</li>
+          <li class="list-group-item">Form 5471</li>
+          <li class="list-group-item">Form 8858</li>
+        </ul>
+      </div>
+      <!---->
     </div>
   </div>
 </div>
@@ -135,6 +143,4 @@ value="option2"> Option 2
 <div>
   <button type="button" class="btn btn-link"> Sign Off </button>
 </div>
-
-
 </html>
